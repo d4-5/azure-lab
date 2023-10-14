@@ -1,0 +1,1 @@
+<?php 	if(isset($_GET['tovar']))	{		if(is_int($_GET['tovar']))	}?>

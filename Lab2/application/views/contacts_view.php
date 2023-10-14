@@ -1,0 +1,1 @@
+<?php 	function get_content($data)	{		echo "<div class='twelve column'>";		foreach($data as $item)		{			echo "<h4>".$item['title']."   -   ".$item['contact']."</h3>";		}		echo "</div>";	}		function buttons_content()	{		}	function get_title()	{		return "Contact us";	}?>

@@ -1,0 +1,1 @@
+<?php 	function get_content($data)	{		foreach($data as $item)		{			echo $item['title']."   -   ".$item['contact'];		}	}		function buttons_content()	{		}	function get_title()	{		return "Contact us";	}?>

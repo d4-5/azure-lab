@@ -1,0 +1,1 @@
+<?php	define("dbhost",     "localhost");	define("dbuser",     "root");	define("dbpass",     "");	define("dbname",     "myshop");	define("baseaddress", "http://mvc.php");?>

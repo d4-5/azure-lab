@@ -1,0 +1,215 @@
+<?php include 'application/views/'.$content_view; ?>
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+
+	<title>
+  		<?php echo get_title();?>
+	</title>
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<link rel="stylesheet" href="<?=baseaddress;?>/stylesheets/albion.css" />
+	<link rel="stylesheet" href="<?=baseaddress;?>/stylesheets/foundation.min.css" />
+	<link rel="stylesheet" href="<?=baseaddress;?>/stylesheets/app.css" />
+	<script src="<?=baseaddress;?>/javascripts/modernizr.foundation.js"></script>
+   <script src="<?=baseaddress;?>/javascripts/jquery.foundation.alerts.js"></script>
+  <script src="<?=baseaddress;?>/javascripts/jquery.foundation.forms.js"></script>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+ 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<header>
+		<div class="row">
+			<div class="four columns">
+				<h1><a href="<?=baseaddress;?>/" style="color: white">ALBION</a></h1>
+			</div>
+			<div class="eight columns">
+				<div class="right">
+					<ul class="link-list">
+						<li><a href="<?=baseaddress;?>/">Home</a></li>
+						<li><a href="<?=baseaddress;?>/tovar/">Shop</a></li>
+						<li><a href="<?=baseaddress;?>/cart/">Cart</a></li>
+						<li><a href="<?=baseaddress;?>/contacts">Contact us</a></li>
+						<li><a href="<?=baseaddress;?>/login" class="small secondary button">Login</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+		</div>
+	</header>
+	<div class="green">
+		<div class="row">
+			<div class="six columns text-center">
+				<img src="<?=baseaddress;?>/images/LOGO.png" alt="Key Visual" />
+			</div>
+			<div class="six columns slogan">
+				<div class="row">
+					<div class="seven columns centered text-center">
+						<div class="cart">
+							<a href="<?=baseaddress;?>/cart/"><img src="<?=baseaddress;?>/images/basket.png"></a>
+							<h4 class="mycart">my cart:<br/>
+							<a href="<?=baseaddress;?>/cart/"><span id="countitems">0</span> items</a></h4>
+						</div>
+						<script>
+							$("#countitems").load("<?baseaddress?>/add_to_basket/get");
+						</script>
+					</div>
+				</div>
+			</div>
+			<hr />
+		</div>
+	</div>
+		<div class="row">
+			<div class="eleven columns centered">
+				<div class="row features">
+				
+				<?php include 'application/views/feature_head.php'; ?>
+				
+				</div>
+			</div>
+		</div>
+
+	<div class="body">
+		<div class="row primary-content">
+		<div class="twelve coluns">
+			<div class="eight columns panel content">
+				<h4 class="headerOther"><?php echo get_title();?></h4>
+				
+				<div class="row">
+					<?php echo get_content($data);?>
+				</div>
+				
+				<div class="row">
+					<div class="twelve column">
+						<div class="four columns"><hr /></div>
+							<div class="four columns text-center">
+								<?php buttons_content();?>
+							</div>
+							<div class="four columns"><hr /></div>
+					</div>
+				</div>
+				
+			<!--	<div class="row">
+					<div class="testimonials">
+						<div class="text-center">
+							<blockquote>
+								<img src="<?=baseaddress;?>/f/1.jpg" />
+							</blockquote>
+						</div>
+						<div class="text-center">
+							<blockquote>
+								<img src="<?=baseaddress;?>/f/2.jpg" />
+							</blockquote>
+						</div>
+						<div class="text-center">
+							<blockquote>
+								<img src="<?=baseaddress;?>/f/3.jpg" />
+							</blockquote>
+						</div>
+					</div>-->
+				</div>
+				
+			</div>
+			<div class="threehalf columns panel content">
+				
+				<?php include 'application/views/right.php'; ?>
+				
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="row footer-top">
+			<div class="two columns">
+				<ul class="side-nav">
+						<li><a href="<?=baseaddress;?>/">Home</a></li>
+						<li><a href="<?=baseaddress;?>/tovar/">Shop</a></li>
+						<li><a href="<?=baseaddress;?>/cart/">Cart</a></li>
+				</ul>
+			</div>
+			<div class="two columns">
+				<ul class="side-nav">
+						<li><a href="<?=baseaddress;?>/contacts">Contact us</a></li>
+						<li><a  href="<?=baseaddress;?>/login">Login</a></li>
+				</ul>
+			</div>
+			<div class="three columns offset-by-one">
+				<h1><a href="<?=baseaddress;?>/">ALBION</a></h1>
+			</div>
+		</div>
+		<div class="row footer-bottom">
+			<div class="four columns">
+				Copyright iceberg1900
+			</div>
+		</div>
+	</footer>
+	
+	
+	
+	<div id="addCartConfirmMessage" class="reveal-modal">
+		<div id="message"></div> 		
+  		<a class="close-reveal-modal secondary button">x</a>
+	</div>
+	<div id="confirmOrder" class="reveal-modal">
+		<div id="confirmForm"></div> 		
+  		<a class="close-reveal-modal secondary button">x</a>
+	</div>
+	<div id="addCart" class="reveal-modal">
+  		<h2>Add to cart</h2>
+  		<div id="desc"></div>
+  		<input id="howMany" type="text" pattern="\d+" placeholder="how many"/>
+  		<a id="add"  href="#" data-reveal-id="addCartConfirmMessage" class="secondary button">Add</a>  		
+  		<a class="close-reveal-modal secondary button">x</a>
+	</div>
+</div>  
+	<script>
+		var id;
+		$(".add").click(function()
+		{
+			id=$(this).attr('id');
+			id=id.replace("id","");
+		});
+		$("#add").click(function()
+		{
+			if(!parseInt($("#howMany").val(),10))
+			{
+				$("#howMany").css("borderColor","red");
+				return false;
+			}
+			else
+			{
+				$("#howMany").css("borderColor","silver");
+				$("#message").load("<?=baseaddress;?>/add_to_basket/add/"+id+"/"+$("#howMany").val());
+				$("#countitems").load("<?=baseaddress;?>/add_to_basket/get/");
+			}
+		});
+		
+		$('#searchbutton').click(function(){
+			var search=$('#searchinput').val();
+			search=search.replace(' ','-');
+			$(location).attr('href',"<?=baseaddress;?>/tovar/search/"+search);
+		});
+	</script>
+  
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="<?=baseaddress;?>/javascripts/foundation.min.js"></script>
+  <!-- Allow IE < 9 to use media queries -->
+  <!--[if lt IE 9]>
+	<script src="<?=baseaddress;?>/javascripts/css3-mediaqueries.js"></script>
+  <![endif]-->
+  
+  <!-- Initialize JS Plugins -->
+  <script src="<?=baseaddress;?>/javascripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+header ul.link-list a
+{
+	margin-top: 20px;
+}
+
+header ul.link-list a.small.button
+{
+	margin-top: 18px;
+}
+
+.slogan
+{
+	margin-top: 5%;
+}
+
+.slogan h2
+{
+	text-transform: uppercase;
+}
+
+.row.features
+{
+	box-shadow: 3px 5px 20px #222;
+	margin-top: -86px;
+	position: absolute;
+	border: 1px solid #808080;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.features h3
+{
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.features hr
+{
+	margin: 0 0 14px;
+}
+
+.feature
+{
+	padding: 5px;
+}
+
+.features > div
+{
+	border-right: 1px solid #333;
+}
+
+.features > div:last-child
+{
+	border-right: none;
+}
+
+.primary-content
+{
+	margin-top: 25px;
+}
+
+.primary-content .block-grid.two-up span
+{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: top;
+	margin-left: 10px;
+}
+
+.all-features hr
+{
+	margin-top: 12px;
+}
+
+.testimonials .orbit-slide
+{
+	background-color: #fff;
+}
+
+.video
+{
+	border-left: 1px solid #333;
+	padding-left: 10px;
+}
+
+footer
+{
+	margin-top: 20px;
+}
+
+.footer-bottom
+{
+	background-color: #666;
+	min-height: 30px;
+	line-height: 30px;
+	border-radius:10px 10px 0px 0px;
+}
+
+.footer-bottom ul.link-list
+{
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+.social div
+{
+	display: inline-block;
+	margin-top: 20px;
+	vertical-align: top;
+}
+
+.social img
+{
+	margin-top: 10px;
+}
+
+/* -----------------------------------------
+   Low Resolution Shared Styles
+----------------------------------------- */
+@media only screen and (max-width: 767px)
+{
+	.row.features
+	{
+		margin-top: 0;
+		position: static;
+	}
+	
+	.features > div
+	{
+		border-right: none;
+		border-bottom: 1px solid #333;
+	}
+
+	.features > div:last-child
+	{
+		border-bottom: none;
+	}
+	
+	.video
+	{
+		border-left: none;
+		padding-left: none;
+	}
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 768px)
+{
+	.primary-content
+	{
+		margin-top: 56px;
+	}
+}

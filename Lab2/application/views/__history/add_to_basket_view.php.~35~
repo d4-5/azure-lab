@@ -1,0 +1,1 @@
+<?php 	if($data)	{		echo  "Thank you! This product was added to cart.<br/>".				"In your cart <span id='cartcount'>".count($_SESSION['cart']). "</span> elements<br/><br/>";		echo "<a href='http://mvc.php/cart/' class='secondary button'>Cart</a>";	}	else	{		echo "Sorry, an error occurred";	}?>

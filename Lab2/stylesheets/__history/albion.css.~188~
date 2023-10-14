@@ -1,0 +1,182 @@
+.green
+{
+	background:url(../images/header-bg.jpg);
+	box-shadow: 0px 5px 30px #312f30;
+}
+.tovarcontrolsrow
+{
+	background: white;
+	margin: 10px 0px !important;
+	padding: 10px 0px !important;
+	max-height: 100px !important;
+	border-bottom: 1px solid #e6e6fa;
+	border-top: 1px solid #e6e6fa;
+}
+.buttons
+{
+	margin: 5px 0px !important;
+}
+.description
+{
+	height: 40px !important;
+}
+.title
+{
+	color: #000066;
+	font-weight: bold;
+}
+.title:hover
+{
+	color: #0000ff;
+	
+}
+.tovarcontrolsrow:hover
+{
+	background: #e6e6fa;
+}
+.tovarcontrols
+{
+	max-height: 65px !important;
+	overflow: hidden !important;
+	word-wrap:break-word !important;
+}
+.searchbutton, .searchinput
+{
+	height: 40px !important;
+	padding:0px !important;
+}
+.right
+{
+	float: right !important;
+}
+.delete
+{
+	color:white !important;
+	border-radius: 5px;
+}
+.deleteItem
+{
+	height: 40px;
+	border-radius:5px;
+	line-height: 40px !important;
+	vertical-align: middle !important;
+	color:white !important;
+	margin: 10px 0px !important;
+}
+body
+{
+	word-wrap:break-word !important;
+	background:url(../images/body-bg.gif);
+}
+.transparent
+{
+	background: none !important;
+	border: 1px solid transparent !important;	
+}
+.transparent:hover
+{
+	border:1px solid #B0B0B0 !important;
+}
+.blockimg
+{
+	border:1px solid #E8E8E8;
+	padding:5px;
+	border-radius: 5px;
+}
+.blockimg:hover
+{
+	border:1px solid #9ACD32;
+}
+.itemtovar
+{
+	margin: 10px 0px;
+}
+.itemtovar .titleitem
+{
+	min-height: 50px;
+	max-height: 50px;
+	overflow: hidden !important;
+}
+.feature_head a
+{
+	color:#006;
+}
+.feature_head a:hover
+{
+	color:#0000FF;
+}
+.feature_head
+{
+	min-height: 100px;
+	max-height: 100px;
+	overflow: hidden !important;
+}
+.threehalf
+{
+	width: 32% !important;
+}
+.price
+{
+	color: #9ACD32;
+}
+.content
+{
+	border:1px solid #B0B0B0 !important;
+	border-radius: 5px;
+	box-shadow: 3px 5px 30px #312f30;
+}
+.body a
+{
+	color:#006;
+}
+.body a:hover
+{
+	color:#0000FF;
+}
+.headerOther
+{
+	background:#ff6200;
+	color:white;
+	padding: 16px 0 16px 19px;
+	border-radius:5px;
+}
+.first .rightMenu
+{
+	margin: 0px 0px 10px 0px !important;
+}
+.rightMenu
+{
+	background:#312f30;
+	color:white;
+	padding: 16px 0 16px 19px;
+	border-radius:5px;
+}
+footer,header
+{
+	background:#312f30;
+	color:white;
+}
+.mycart
+{
+	display:inline-block;
+	margin-left:30px;
+}
+.cart a
+{
+	color:#006;
+}
+.cart a:hover
+{
+	color:#0000bb !important;
+}
+.cart
+{
+	box-shadow: 3px 5px 25px #222;
+	background:url(../images/bg.png);
+	border-radius:7px;
+	color:#222;
+	vertical-align:middle;
+	text-align:center;
+	padding: 10px;
+	margin-top:20px;
+}

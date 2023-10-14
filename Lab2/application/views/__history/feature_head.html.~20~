@@ -1,0 +1,1 @@
+<div class="four columns text-center feature_head">	<div class="row feature">		<div class="four column mobile-one text-center ">		<a href=##href##">			##imgsrc##		</a>		</div>		<div class="eight column mobile-three text-center ">			<h6 style="text-center">				<a href=##href##">					##title##				</a>			</h6>			<hr />			##description1##		</div>	</div></div>
