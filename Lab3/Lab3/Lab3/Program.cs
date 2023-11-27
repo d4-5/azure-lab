@@ -13,7 +13,7 @@ namespace Lab3
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            var connectionString = "";
+            var connectionString = "DefaultEndpointsProtocol=https;AccountName=lab3pm;AccountKey=hpTx4fk9RambMpQ78GRrh2hc9BZeBx5OATXFs9RWURJIF+4hUIPOkGX8bmGP8Da6O14MvB6nPATP+ASt6GjdUA==;EndpointSuffix=core.windows.net";
             var tableName = "Contacts";
 
             var tableClient = new TableClient(connectionString, tableName);

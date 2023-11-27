@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<ITelegramBotClient>(new TelegramBotClient("6708148816:AAHtcyqQbjjn4W6RS-dg4qXehSTb77V_4TQ"));
+builder.Services.AddSingleton<ITelegramBotClient>(new TelegramBotClient(""));
 
 var app = builder.Build();
 
